@@ -1,10 +1,11 @@
 import mysql.connector
+import mysql_details
 
 
 mydb = mysql.connector.connect (
     host ='localhost' ,
-    user = 'debian-sys-maint' ,
-    password = 'xkfnnlgUOSuVdAjg' ,
+    user = mysql_details.my_user ,
+    password = mysql_details.my_pass ,
     database = 'dbnow'
 )
 
